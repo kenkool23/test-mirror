@@ -1,0 +1,9 @@
+build the car
+  scripts:
+    - mkdir build
+    - cd build
+    - touch car.txt
+    - echo "Install chasis" > car.txt
+    - echo "Install engine" > car.txt
+    - echo "Install tire" > car.txt
+    
