@@ -1,5 +1,5 @@
 build the car
-  scripts:
+  script:
     - mkdir build
     - cd build
     - touch car.txt
