@@ -1,4 +1,9 @@
+stages:
+  - build
+  - test
+
 build the car:
+  stage: build
   script:
     - mkdir build
     - cd build
@@ -6,4 +11,11 @@ build the car:
     - echo "Install chasis" > car.txt
     - echo "Install engine" >> car.txt
     - echo "Install tire" >> car.txt
-    
+
+test the car:
+  stage: test
+  script:
+    - test -f build/car.txt
+    - cd build
+    - grep "chasis" car.txt
+    - grep "engine" car.txt
