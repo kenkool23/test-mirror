@@ -12,6 +12,7 @@ terraform {
 
 
 module "bucket" {
-  source      = "./module"
-  bucket_name = "my-deployed-bucket-kenkool"
+  source             = "./module"
+  bucket_name        = "my-deployed-bucket-kenkool"
+  enabled_versioning = true
 }
