@@ -16,6 +16,7 @@ jobs:
   #     aws-region: us-east-2
 
   terraform:
+    environment: production
     name: 'Terraform'
     runs-on: ubuntu-latest
 
