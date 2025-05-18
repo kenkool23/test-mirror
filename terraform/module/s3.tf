@@ -11,7 +11,7 @@ resource "aws_s3_bucket_versioning" "versioning_s3" {
 }
 
 resource "aws_s3_object" "object" {
-  for_each = tomap(var.bucket_object)
+  for_each = var.bucket_object
   bucket   = aws_s3_bucket.s3.id
   key      = each.value.object_key
   source   = each.value.object_path
