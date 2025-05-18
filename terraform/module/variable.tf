@@ -9,8 +9,8 @@ variable "enabled_versioning" {
 
 
 variable "bucket_object" {
-  type = object({
+  type = map(object({
     object_key  = string
     object_path = string
-  })
+  }))
 }
