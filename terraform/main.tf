@@ -16,7 +16,13 @@ module "bucket" {
   bucket_name        = "my-deployed-bucket-kenkool"
   enabled_versioning = true
   bucket_object = {
-    object_key  = "key"
-    object_path = "."
+    "file1" = {
+      object_key  = "my-key-1"
+      object_path = "file1.txt"
+    },
+    "file2" = {
+      object_key  = "my-key-2"
+      object_path = "file2.txt"
+    }
   }
 }
