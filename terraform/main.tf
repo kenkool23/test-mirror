@@ -15,4 +15,8 @@ module "bucket" {
   source             = "./module"
   bucket_name        = "my-deployed-bucket-kenkool"
   enabled_versioning = true
+  bucket_object = {
+    object_key  = "key"
+    object_path = "."
+  }
 }
